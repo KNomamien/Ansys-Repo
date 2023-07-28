@@ -72,3 +72,17 @@ variable "multi_az_deployment" {
     description = "create a standby db instance"
     type        = bool
 }
+
+# ALB variables
+variable "ssl_certificate_arn" {
+    default     = "arn:aws:acm:us-east-1:284526353281:certificate/66745465-7834-4863-a53a-2dd1f370a9f1"
+    description = "ssl certificate arn"
+    type        = string
+}
+
+# sns topic variables
+variable "operator_email" {
+    default     = "knomamien@gmail.com"
+    description = "a valid email address"
+    type        = string
+}
