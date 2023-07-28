@@ -111,3 +111,15 @@ variable "ec2_key_pair_name" {
     description = "key pair name"
     type        = string
 }
+
+variable "domain_name" {
+    default     = "naseopid.com"
+    description = "domain name"
+    type        = string
+}
+
+variable "record_name" {
+    default     = "www"
+    description = "sub-domain name"
+    type        = string
+}
